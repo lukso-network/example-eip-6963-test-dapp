@@ -2,6 +2,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --lukso-pink: #f6025b;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -67,7 +71,7 @@ button > img {
   margin-right: 1em;
 }
 button:hover {
-  border-color: #75079d;
+  border-color: #ef2b6c;
 }
 button:focus,
 button:focus-visible {
@@ -80,15 +84,32 @@ button:last-child {
   margin-bottom: 0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      #fff0f8,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.bg-lukso-pink {
+  background-color: var(--lukso-pink);
+}
+
+.bg-lukso-pink:hover {
+  background-color: #ef2b6c;
+}
+
+select:focus {
+  border-color: var(--lukso-pink);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px var(--lukso-pink);
 }
