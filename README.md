@@ -17,7 +17,7 @@ The Example code repo above will help you create a simple implementation of EIP-
 
 The crux of what we will be doing is implementing the interfaces outlined in the EIP and listening to `eip6963:announceProvider` events in our dapp and storing the returned providers so they can be used anywhere and at anytime in our dApp giving us the ability to distinguish between providers.
 
-![EIP-6963 React Demo](https://i.imgur.com/umohX4G.gif)
+![EIP-6963 React Demo](https://imgur.com/eWCd1S0.gif)
 
 ## The EIP-6963 Abstract
 
