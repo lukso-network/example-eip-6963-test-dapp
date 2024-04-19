@@ -1,3 +1,5 @@
+You can try the example app [here](https://lukso-network.github.io/example-eip-6963-test-dapp/)
+
 To see Universal Profile Browser Extension in action with EIP-6963 support:
 
 1. Ensure you have the [Universal Profile Browser Extension](https://docs.lukso.tech/install-up-browser-extension) and at least one more wallet extension installed in your browser
